@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{
+    --main: #E5C1BD;
+    --second: #734B5E;
+    --secondLight: #997C89;
+    --grey: #949393;
+    --white: #E9E9E9;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--main);
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+main{
+    width: 85%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    line-height: 2;
+    font-size: 2rem;
+}
+
+main button {
+    width: 40%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 0.5rem;
+    font-size: 1.15rem;
+    line-height: 1.15;
+    background: var(--second);
+    transition: background 300ms ease; 
+    cursor: pointer;
+}
+main button:hover{
+    background: var(--secondLight);
+}
+
+.recipe_card__container {
+    width: 60%;
+    min-width: 500px;
+    display: grid;
+    grid-template-rows: 34% auto 60%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+.recipe_card___image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.recipe_card___image img {
+    max-width: 100%;
+}
+
+.recipe_card__details{
+    background: var(--white);
+    padding: 1rem; 
+    display: flex;
+    flex-direction: row;
+}
+.recipe_card__title{
+    background: var(--secondLight);
+    color: #212121;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0;
+}
+.recipe_card__ingredients{
+    width: 30%; 
+    list-style: none;
+    font-size: 1.05rem;
+    line-height: 1.15;
+}
+.recipe_card__directions{
+    width: 70%;
+    padding: 0 0.5rem;
+    font-size: 1.13rem;
+    line-height: 1.15;
+}
+.details__heading{
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
